@@ -1,0 +1,16 @@
+Lab 2 – Simple UNIX Shell
+
+Files:
+- myshell.c   : main shell loop, parsing, execution
+- utility.c  : internal commands and helpers
+- myshell.h  : shared definitions
+- makefile   : builds shell with `make`
+- readme     : documentation
+
+Features:
+- Internal commands: cd, clr, dir, environ, echo, help, pause, quit
+- External command execution via fork/exec
+- I/O redirection: <, >, >>
+- Background execution with &
+- Batch mode: ./myshell batchfile
+- Environment variables: shell, parent
