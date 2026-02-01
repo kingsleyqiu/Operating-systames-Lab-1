@@ -9,9 +9,7 @@
 #include <sys/wait.h>
 
 /* ---------- Parsing ---------- */
-int parse_command(char *line, char **args,
-                  char **infile, char **outfile,
-                  int *append, int *background) {
+int parse_command(char *line, char **args, char **infile, char **outfile, int *append, int *background) {
 
     *infile = *outfile = NULL;
     *append = *background = 0;
