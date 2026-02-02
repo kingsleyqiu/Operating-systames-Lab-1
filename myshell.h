@@ -1,15 +1,11 @@
 #ifndef MYSHELL_H
 #define MYSHELL_H
-
 #include <limits.h>
-
 #define MAX_LINE 1024
 #define MAX_ARGS 64
 
-/* parsing */
 int parse_command(char *line, char **args, char **inputf, char **outf, int *append, int *background);
-
-/* internal commands */
+/* calling commands */
 void cmd_cd(char **args);
 void cmd_clr(void);
 void cmd_dir(char **args);
