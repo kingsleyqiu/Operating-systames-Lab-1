@@ -7,9 +7,7 @@
 #define MAX_ARGS 64
 
 /* parsing */
-int parse_command(char *line, char **args,
-                  char **infile, char **outfile,
-                  int *append, int *background);
+int parse_command(char *line, char **args, char **inputf, char **outf, int *append, int *background);
 
 /* internal commands */
 void cmd_cd(char **args);
