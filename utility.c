@@ -1,5 +1,4 @@
 #define _POSIX_C_SOURCE 200809L
-
 #include "myshell.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -21,8 +20,7 @@ void print_prompt(void) {
     fflush(stdout);
 }
 
-/* ---------- Internal Commands ---------- */
-
+/* command functions */
 void cmd_cd(char **args) {
     if (!args[1]) {
         char cwd[1024];
