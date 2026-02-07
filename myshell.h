@@ -1,3 +1,4 @@
+/*Qian Qiu, 100913856 - Operating systems lab 2 Group 7*/
 #ifndef MYSHELL_H
 #define MYSHELL_H
 #include <limits.h>
