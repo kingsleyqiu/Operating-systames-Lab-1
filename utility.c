@@ -20,7 +20,7 @@ void print_prompt(void) {
     fflush(stdout);
 }
 
-/* command functions */
+/* command functions to be called by the header files*/
 void cmd_cd(char **args) {
     if (!args[1]) {
         char cwd[1024];
