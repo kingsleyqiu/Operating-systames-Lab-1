@@ -23,7 +23,12 @@ This lab is a simple UNIX command line shell that provides a basic interface bet
 The shell supports input/output redirection, background execution, and batch file processing.
 
 How to start the shell:
-Once you place the system in a folder, navigate to that folder in your command prompt, then: The shell can be started in two different modes
+Once you place the system in a folder, navigate to that folder in your command prompt, then run 
+
+make clean
+make
+
+After that, the shell can be started in two different modes
 1. Interactive Mode Run the shell without arguments:
 ./myshell
 The shell will display a prompt showing the current working directory and wait for user input.
