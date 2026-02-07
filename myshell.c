@@ -1,3 +1,4 @@
+/*Qian Qiu, 100913856 - Operating systems lab 2 Group 7*/
 #define _POSIX_C_SOURCE 200809L
 
 #include "myshell.h"
