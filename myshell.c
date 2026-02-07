@@ -15,7 +15,8 @@ int parse_command(char *line, char **args, char **inputf, char **outf, int *appe
     line[strcspn(line, "\n")] = 0;
     int i = 0;
     char *x = strtok(line, " ");
-
+   
+/*basically identifying each little pieces that was broken up and what it does*/
     while (x) {
         if (!strcmp(x, "<")) {
             *inputf = strtok(NULL, " ");
