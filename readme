@@ -1,11 +1,14 @@
-Lab 2 – Simple UNIX Shell
+Lab 2 – Simple UNIX Shell 
+Name: Qian Qiu 
+Student Number: 100913856 
+Course: SOFE3950U Operating Systems
 
 Files:
-- myshell.c   : main shell loop, parsing, execution
-- utility.c  : internal commands and helpers
-- myshell.h  : shared definitions
-- makefile   : builds shell with `make`
-- readme     : documentation
+myshell.c   : main shell loop, parsing, execution
+utility.c  : internal commands and helpers
+myshell.h  : shared definitions
+makefile   : builds shell with `make`
+readme     : documentation
 
 Features:
 - Internal commands: cd, clr, dir, environ, echo, help, pause, quit
@@ -14,3 +17,44 @@ Features:
 - Background execution with &
 - Batch mode: ./myshell batchfile
 - Environment variables: shell, parent
+
+Introduction:
+This lab is a simple UNIX command line shell that provides a basic interface between the user and the operating system.It allows users to execute built-in shell commands as well as external UNIX programs. 
+The shell supports input/output redirection, background execution, and batch file processing.
+
+How to start the shell:
+Once you place the system in a folder, navigate to that folder in your command prompt, then: The shell can be started in two different modes
+1. Interactive Mode Run the shell without arguments:
+./myshell
+The shell will display a prompt showing the current working directory and wait for user input.
+
+2. Batch Mode Run the shell with a batch file:
+./myshell batchfile
+The batch file must contain one command per line. The shell will execute each command sequentially and automatically terminate when the end of the file is reached.
+
+Internal Commands:
+The following commands are built into myshell and are executed directly by the shell.
+- cd Changes the current working directory.
+- clr Clears the terminal screen.
+- dir Lists the contents of the specified directory.
+- environ Displays all environment variables available to the shell.
+- echo Displays the provided comment followed by a newline.
+- help Displays this user manual using the more filter, allowing the user to scroll through the documentation.
+- pause Pauses the shell until the user presses the Enter key.
+- quit Terminates the shell.
+
+I/O redirections:
+Input Redirection (<) Redirects standard input from a file:
+program < inputfile
+
+Output Redirection (>) Redirects standard output to a file. If the file exists, it is overwritten:
+program > outputfile
+
+Append Output Redirection (>>) Appends standard output to a file. If the file does not exist, it is created:
+program >> outputfile
+
+Background executions:
+A command followed by an ampersand (&) will execute in the background. This allows the shell to return immediately to the prompt without waiting for the command to finish.
+Example:
+sleep 10 &
+Background execution is supported only for external commands. Internal commands do not support background execution.
