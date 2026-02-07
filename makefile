@@ -1,4 +1,4 @@
-#Qian Qiu, 100913856 - Operating systems lab 2 Group 7
+/* Qian Qiu, 100913856 - Operating systems lab 2 Group 7 */
 CC=gcc
 CFLAGS=-Wall -Wextra -std=c99
 OBJ=myshell.o utility.o
