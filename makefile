@@ -3,6 +3,7 @@ CC=gcc
 CFLAGS=-Wall -Wextra -std=c99
 OBJ=myshell.o utility.o
 
+/*basically create these files when you run the makefile*/
 myshell: $(OBJ)
 	$(CC) $(CFLAGS) -o myshell $(OBJ)
 
